@@ -71,7 +71,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratif
 print(X.shape, X_train.shape, X_test.shape)
 
 
-model = LogisticRegression()
+model = LogisticRegression(max_iter=1000)
 
 # training the Logistic Regression Model with Training Data
 model.fit(X_train, Y_train)
